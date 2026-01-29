@@ -1532,7 +1532,6 @@ void displayPowerPage() {
     lcd.print("P:ERR");
   }
   
-  // Energy & Power Factor
   lcd.setCursor(0, 3);
   if (!isnan(systemStatus.lastEnergy) && systemStatus.lastEnergy >= 0) {
     lcd.printf("E:%.2fkWh", systemStatus.lastEnergy);
